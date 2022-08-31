@@ -1,10 +1,10 @@
 let popUpOpen = false;
 
 var messageArray = [
-  "Hey you! It's Vealy here. I'm gonna be changing my artist name soon! See if you can figure it out b4 I officially announce it. Little surprise at the very end if u crack it ;)",
+  "hey u! it's vealy here. i'm gonna be changing my artist name soon! see if u can figure it b4 I officially announce it. lil surprise at the end if u crack it ;)"
 ];
 var textPosition = 0;
-var speed = 100;
+var speed = 65;
 
 typewriter = () => {
   document.querySelector("#message").innerHTML =
@@ -153,13 +153,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const currentWordArr = getCurrentWordArr();
     const removedLetter = currentWordArr.pop();
 
-    
-      guessedWords[guessedWords.length - 1] = currentWordArr;
-      const lastLetterEl = document.getElementById(String(availableSpace - 1));
+    guessedWords[guessedWords.length - 1] = currentWordArr;
+    const lastLetterEl = document.getElementById(String(availableSpace - 1));
 
-      lastLetterEl.textContent = "";
-      availableSpace = availableSpace - 1;
-    
+    lastLetterEl.textContent = "";
+    availableSpace = availableSpace - 1;
   }
 
   for (let i = 0; i < keys.length; i++) {
