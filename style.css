@@ -431,7 +431,7 @@ body{
 
 
 #game header{
-    padding: 4px;
+    padding: 12px;
  
     
     
@@ -444,9 +444,10 @@ body{
 #board__container{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-grow: 1;
     overflow: hidden;
+    
  
 }
 
@@ -697,9 +698,7 @@ span{
     #game {
         height: 100%;
     }
-    #game header{
-        margin-top: 48px;
-    }
+   
 
     
 
