@@ -449,6 +449,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 24px;
     flex-grow: 1;
     overflow: hidden;
     
