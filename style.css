@@ -422,29 +422,33 @@ body{
 #game{
     width: 100%;
     
-    height: 800px;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
+    
     
 }
 
 
 #game header{
     padding: 12px;
- 
-    
-    
+    position: absolute;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    width: 100%;
+    top: 0;
+   
+
+ 
     
 }
 
 #board__container{
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     flex-grow: 1;
     overflow: hidden;
     
@@ -497,6 +501,7 @@ body{
     padding: 10px;
 
     justify-self: center;
+   
     
 
 }
@@ -693,7 +698,11 @@ span{
 @media (max-width: 1000px){
  
 }
-
+@media (min-height:700px){
+    #game header{
+        margin-top: 62px;
+    }
+}
 @media (max-width:768px) {
     #game {
         height: 100%;
