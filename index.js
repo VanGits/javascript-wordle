@@ -1,13 +1,16 @@
 let popUpOpen = false;
 
 var messageArray = [
+
   "hey u! it's vealy here. i'm gonna be changing my artist name soon! see if u can figure it b4 I officially announce it. lil surprise at the end if u crack it ;)"
 ];
 var textPosition = 0;
 var speed = 65;
 
+
 typewriter = () => {
   document.querySelector("#message").innerHTML =
+  
     messageArray[0].substring(0, textPosition) + "<span>\u25ae</span>";
   if (textPosition++ != messageArray[0].length) {
     setTimeout(typewriter, speed);
@@ -32,6 +35,22 @@ function closePopUp() {
   } else {
     popUpNoti.style.display = "none";
   }
+}
+
+function closePopSuccess() {
+  var popUpSuccess = document.getElementById("congratulations__wrapper");
+  if (popUpSuccess.style.visibility === "visible"){
+    return popUpSuccess.style.display = "none"
+  }
+}
+
+function popSuccess() {
+  var popUpSuccess = document.getElementById("congratulations__wrapper");
+  setInterval(() => {
+      popUpSuccess.style.visibility = "visible";
+  }, 3000)
+    
+  
 }
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -122,7 +141,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         guessedWordCount += 1;
 
-        if (guessedWords.length === 6) {
+        if (guessedWords.length === 6 && currentWord !== word) {
           window.alert("You have lost, try again next time.");
           window.location.reload();
         }
@@ -132,11 +151,12 @@ document.addEventListener("DOMContentLoaded", () => {
         window.alert("Word is not recognized!");
       });
     if (currentWord === word) {
-      window.alert("Congratulations!");
+      popSuccess();
       fireworks.start();
+      
     }
+  
   }
-
   function createSquares() {
     const gameBoard = document.getElementById("board");
 
