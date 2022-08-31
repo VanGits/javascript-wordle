@@ -432,6 +432,8 @@ body{
 
 #game header{
     padding: 4px;
+ 
+    
     
     display: flex;
     align-items: center;
@@ -445,6 +447,7 @@ body{
     align-items: center;
     flex-grow: 1;
     overflow: hidden;
+ 
 }
 
 .wordle__logo{
@@ -693,6 +696,9 @@ span{
 @media (max-width:768px) {
     #game {
         height: 100%;
+    }
+    #game header{
+        margin-top: 48px;
     }
 
     

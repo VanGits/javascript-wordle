@@ -5,7 +5,7 @@ var messageArray = [
   "hey u! it's vealy here. i'm gonna be changing my artist name soon! see if u can figure it b4 I officially announce it. lil surprise at the end if u crack it ;)"
 ];
 var textPosition = 0;
-var speed = 65;
+var speed = 45;
 
 
 typewriter = () => {
@@ -136,6 +136,8 @@ document.addEventListener("DOMContentLoaded", () => {
               const letterEl = document.getElementById(letterId);
               letterEl.classList.add("animate__flipInX");
               letterEl.style = `background-color:${tileColor};border-color:${tileColor}`;
+              const keyboardEl = document.querySelector(`[data-key=${letter}]`);
+              keyboardEl.style = `background-color:${tileColor};border-color:${tileColor};color:white;`;
             }, interval * index);
           });
 
