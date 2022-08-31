@@ -704,6 +704,12 @@ span{
         margin-top: 62px;
     }
 }
+
+@media(max-height: 700px){
+    #game header{
+        position: relative;
+    }
+}
 @media (max-width:768px) {
     #game {
         height: 100%;
