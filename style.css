@@ -432,7 +432,7 @@ body{
 
 
 #game header{
-    padding: 12px;
+    padding: 4px;
     position: absolute;
     display: flex;
     align-items: center;
@@ -703,11 +703,15 @@ span{
     #game header{
         margin-top: 62px;
     }
+  
 }
 
 @media(max-height: 700px){
     #game header{
         position: relative;
+    }
+    #board__container{
+        margin-top: 0px;
     }
 }
 @media (max-width:768px) {
