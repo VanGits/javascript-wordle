@@ -401,7 +401,7 @@ body{
 
 #wordle{
     /* background: radial-gradient(orange, #ff8d2c); */
-    background: url("./assets/vbj.jpg");
+    background: url("./assets/boh.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
@@ -413,6 +413,14 @@ body{
    
     
     
+}
+
+source, video{
+    max-width: 500px;
+    width: 100%;
+    height: 500px;
+    z-index: 999999999999999999;
+
 }
 
 
@@ -647,8 +655,8 @@ span{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: white;
-    box-shadow: 0px 2.98px 7.46px 0px rgba(0, 0, 0, 0.4);
+    /* background-color: white;
+    box-shadow: 0px 2.98px 7.46px 0px rgba(0, 0, 0, 0.4); */
     margin-top: 80px;
     
     border-radius: 20px;
@@ -668,17 +676,18 @@ span{
 #congratulations__wrapper h1{
     font-size: 20px !important; 
     color: rgb(219, 106, 0);
-
+    z-index: 9999999999999999 !important;
     font-weight: 600;
 }
 
 .congratulations .fa-solid{
     position: absolute;
-    right: 10px;
+    right: 20px;
     top: 10px;
     color: rgb(219, 106, 0);
     font-size: 18px;
     cursor: pointer;
+    z-index: 9999999999999999999999999999999 !important;
 }
 
 
@@ -708,6 +717,13 @@ span{
     
     #board__container{
         margin-top: 0px;
+    }
+}
+@media (max-width:520px){
+    .square{
+        min-height: 50px !important;
+        min-width: 50px !important;
+        font-size: 1.5rem;
     }
 }
 @media (max-width:768px) {
@@ -815,6 +831,8 @@ ALBUMS
     opacity: 1;
 
 }
+
+
 
 @media (max-width: 768px) {
     .header__img{
