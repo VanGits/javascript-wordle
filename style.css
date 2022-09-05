@@ -136,7 +136,7 @@ li {
 }
 
 .logo {
-    font-size: 32px;
+    font-size: 48px;
     
 }
 
@@ -433,7 +433,7 @@ body{
 
 #game header{
     padding: 4px;
-    position: absolute;
+    
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -639,7 +639,7 @@ span{
 #congratulations__wrapper{
     position: absolute;
     z-index: 99999999;
-   max-width: 400px;
+    max-width: 400px;
     width: 100%;
     max-height: 500px;
     height: 100%;
@@ -700,16 +700,12 @@ span{
  
 }
 @media (min-height:700px){
-    #game header{
-        margin-top: 62px;
-    }
+    
   
 }
 
 @media(max-height: 700px){
-    #game header{
-        position: relative;
-    }
+    
     #board__container{
         margin-top: 0px;
     }
