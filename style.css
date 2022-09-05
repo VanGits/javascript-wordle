@@ -719,13 +719,7 @@ span{
         margin-top: 0px;
     }
 }
-@media (max-width:520px){
-    .square{
-        min-height: 50px !important;
-        min-width: 50px !important;
-        font-size: 1.5rem;
-    }
-}
+
 @media (max-width:768px) {
     #game {
         height: 100%;
@@ -740,8 +734,8 @@ span{
     }   
 
     .square{
-        min-height: 55px;
-        min-width: 55px;
+        min-height: 50px;
+        min-width: 50px;
         font-size: 1.5rem;
     }
 
