@@ -201,7 +201,14 @@ document.addEventListener("DOMContentLoaded", () => {
       let enter;
       let alpha = e.code.toLowerCase();
 
+      console.log(e.keyCode)
+      if (e.keyCode === 20 || e.keyCode === 16 || e.keyCode === 9 || e.keyCode === 192 || e.keyCode === 189 || e.keyCode === 17 || e.keyCode === 18 || e.keyCode === 91 || e.keyCode === 187 || e.keyCode === 221 || e.keyCode === 219 || e.keyCode === 220 ||  e.keyCode === 186 || e.keyCode === 222 || e.keyCode === 190 || e.keyCode === 188 || e.keyCode === 191 || e.keyCode === 93 || e.keyCode === 37 || e.keyCode === 38 || e.keyCode === 39 || e.keyCode === 40 || e.keyCode === 49 || e.keyCode === 50 || e.keyCode === 51 || e.keyCode === 52 || e.keyCode === 53 || e.keyCode === 54 || e.keyCode === 55 || e.keyCode === 56 || e.keyCode === 57 || e.keyCode === 48){
+        alpha = null
+      }
+
+     
       if (alpha === "enter") {
+        
         enter = alpha;
         enter.toUpperCase();
         handleSubmitWord();
