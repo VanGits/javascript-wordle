@@ -173,6 +173,15 @@ LANDING PAGE
 #ff8d2c
 */
 
+audio, source{
+   max-width: 300px;
+   justify-self: center;
+   align-self: flex-end;
+    
+   
+   
+}
+
 #landing-page {
     min-height: 100vh;
     background: radial-gradient(orange, #ff8d2c);
@@ -601,6 +610,8 @@ source, video{
     
     width: 80%;
     margin-top: 50px;
+    display: flex;
+    flex-direction: column;
 }
 
 #popUp .fa-solid{

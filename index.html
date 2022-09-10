@@ -11,9 +11,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300&display=swap"
+      rel="stylesheet"
+    />
     <script src="index.js"></script>
     <script
       src="https://kit.fontawesome.com/009c432c0f.js"
@@ -22,7 +25,8 @@
     <script src="https://cdn.jsdelivr.net/npm/fireworks-js@latest/dist/fireworks.js"></script>
   </head>
   <body>
-     <!--<section id="landing-page">
+   
+    <!--<section id="landing-page">
         <nav>
             
             <ul class = "nav__links">
@@ -149,33 +153,43 @@
         <div class = "wave wave4"></div>
         
     </section>  -->
+    
 
     <section id="wordle">
+        
+        
       <div class="fireworks-container"></div>
-       
+
       <div id="container">
         <div id="congratulations__wrapper">
-            <div class="congratulations">
-                <!-- <i  class="fa-solid fa-xmark" onclick="closePopSuccess()"></i> -->
-                <!-- <h1>YASSSS !! here's ur lil surprise !!!</h1> -->
-                <video width="500" height="500" autoplay controls>
-                    <source src="./assets/lotti_surprise.webm" type='video/webm'>
-                </video>
-                
-            </div>
+          <div class="congratulations" id="congratulations">
+          
+            <!-- <h1>YASSSS !! here's ur lil surprise !!!</h1> -->
+            <video  width="500" height="500" controls>
+              <source src="./assets/lotti2.webm" type="video/webm" />
+            </video>
+            <i  class="fa-solid fa-xmark" onclick="closePopSuccess()"></i>
+          </div>
         </div>
         
+       
+        
+      
+
         <div id="popUp">
           <div class="popUp__top">
             <p></p>
             <h1 class="popUp__Text">HOW TO PLAY</h1>
-            <div class="close__wrapper"onclick=closePopUp()>
-                <i  class="fa-solid fa-xmark" ></i>
+            <div class="close__wrapper" onclick="closePopUp()">
+              <i class="fa-solid fa-xmark"></i>
             </div>
-            
+           
           </div>
           <div class="popUp__middle">
-              <p id="message"></p>
+            <p id="message"></p>
+            <audio controls>
+                <source src="./assets/before.mp3" type="audio/mp3">
+            </audio>
           </div>
         </div>
         <div id="game">
@@ -183,21 +197,18 @@
             <div class="header__Text">
               <p class="wordleText"></p>
               <!-- <p class="surprise">Your Surprise</p> -->
-              <img class = "wordle__logo"src="./assets/VEALY_logo.png" alt="">
+              <img class="wordle__logo" src="./assets/VEALY_logo.png" alt="" />
               <i class="fa-solid fa-circle-question" onclick="closePopUp()"></i>
             </div>
           </header>
 
           <div id="board__container">
-            <div id="board">
-                
-               
-            </div>
+            <div id="board"></div>
           </div>
 
           <div id="keyboard__container">
             <div class="keyboard__row">
-              <button data-key="q" >Q</button>
+              <button data-key="q">Q</button>
               <button data-key="w">W</button>
               <button data-key="e">E</button>
               <button data-key="r">R</button>
