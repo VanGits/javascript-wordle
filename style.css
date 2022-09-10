@@ -866,7 +866,7 @@ ALBUMS
     .playlist{
         padding: 2px 0;
     }
-    source, video{
+    source, video, iframe{
         max-width: 250px;
         width: 100%;
         height: 250px;
