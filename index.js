@@ -227,7 +227,3 @@ document.addEventListener("DOMContentLoaded", () => {
   document.addEventListener("keydown", logKey);
 });
 
-const video = document.getElementById("congratulations");
-let playState = null;
-
-video.play()
